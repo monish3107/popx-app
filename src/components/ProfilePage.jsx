@@ -1,12 +1,11 @@
 import { useNavigate } from 'react-router-dom';
 import '../index.css';
 import cameraIcon from '../assets/camera-icon.svg';
-import profileImage from '../assets/image.png'; // Add this import
-
+import profileImage from '../assets/image.png'; 
 const ProfilePage = () => {
   const navigate = useNavigate();
   
-  // Mock user data - in a real app, you'd get this from context/redux/api
+  // not real data
   const userData = {
     name: 'Marry Doe',
     email: 'Marry@Gmail.Com',
@@ -51,7 +50,6 @@ const ProfilePage = () => {
           marginBottom: '16px'
         }}>
           <div style={{ position: 'relative', marginRight: '16px' }}>
-            {/* Profile image container remains unchanged */}
             <div style={{
               width: '64px',
               height: '64px',
@@ -65,7 +63,6 @@ const ProfilePage = () => {
                 style={{ width: '100%', height: '100%', objectFit: 'cover' }}
               />
             </div>
-            {/* Camera icon remains unchanged */}
             <div style={{
               position: 'absolute',
               bottom: '0',
@@ -107,7 +104,6 @@ const ProfilePage = () => {
           </div>
         </div>
 
-        {/* Bio text moved below */}
         <p style={{
           fontSize: '14px',
           fontWeight: '400',
@@ -120,14 +116,12 @@ const ProfilePage = () => {
         </p>
       </div>
 
-      {/* Empty space with dotted border */}
       <div style={{
         flex: 1,
         borderBottom: '1px dashed #E0E0E0',
         backgroundColor: '#F7F8F9'
       }}></div>
       
-      {/* Bottom dashed border */}
       <div style={{
         height: '24px',
         borderBottom: '1px dashed #E0E0E0',

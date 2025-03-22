@@ -1,4 +1,3 @@
-// src/App.jsx
 import './index.css';
 
 function App() {
